@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+
+    <ProgressBar
+        android:id="@+id/pBarInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="65dp"
+        android:minWidth="65dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imgFotoCancion"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:contentDescription="@string/msg_fallo_img"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="0.5"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtAutor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/blanco_a"
+            android:textIsSelectable="false" />
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/blanco"
+            android:textIsSelectable="false"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

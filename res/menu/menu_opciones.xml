@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/menu_contenedor" android:title="Opciones" android:icon="@drawable/plus" android:showAsAction="ifRoom">
+        <menu>
+            <item android:id="@+id/menu_inicio" android:title="Inicio"/>
+            <item android:id="@+id/menu_perfil" android:title="Perfil"/>
+            <item android:id="@+id/menu_listas" android:title="Listas Reproduccion" />
+            <item android:id="@+id/menu_salir" android:title="Salir" />
+            
+        </menu>
+    </item>
+
+</menu>

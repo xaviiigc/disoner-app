@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Disoner</string>
+    <string name="btn_entrar">Entrar</string>
+    
+    <string name="login_usuario">xaviguell.91@gmail.com</string><string name="login_pwd">12345677</string><string name="txt_login_correo">Correo Electrónico</string>
+    <string name="txt_login_password">Password</string>
+    
+    
+    
+    <string name="txt_cancion_comentarios">Comentarios</string>
+    <string name="txt_perfil_canciones">Canciones</string><string name="btn_cancion_play">Play</string>
+    <string name="btn_cancion_pause">Pause</string><string name="btn_reproductor_comentar">Comentar</string><string name="btn_amigo_on">Amigo</string>
+    
+    <string name="btn_amigo_off">Agregar</string><string name="pestana_canciones">Canciones</string>
+    
+    <string name="pestana_amigos">Amigos</string>
+    <string name="pestana_fans">Fans</string>
+    <string name="pestana_informacion">Información</string>
+    
+    
+    <string name="msg_error_servidor">Error al conectar con el servidor</string><string name="msg_fallo_img">Imagen</string><string name="msg_inicio_canciones">Esto es embarazoso, no tienes amigos! deberías empezar a seguir a algun usuario para poder disfrutar de Disoner!  Para ello accede a nuestra plataforma web y añade a algunos amigos</string><string name="msg_login_incorrecto">Usuario / Contraseña incorrectas</string>
+    <string name="msg_perfil_canciones">Este perfil no dispone de canciones</string>
+    <string name="msg_perfil_amigos">Este perfil no dispone de amigos</string>
+    <string name="msg_perfil_fans">Este perfil no dispone de fans</string>
+    <string name="msg_lista_no">Actualmente no dispones de ninguna lista de reproducción, Haz clic en el menú para añadir una nueva lista</string>
+    <string name="msg_lista_cancion_eliminada">Canción eliminada</string>
+    <string name="msg_lista_vacias">Esta lista de reproduccion no tiene canciones deberias añadir alguna</string>
+    <string name="msg_lista_anadida">Lista añadida</string>
+    <string name="msg_lista_titulo">Listas de Reproducción</string>
+    <string name="msg_lista_sin_nombre">No puedes introducir una lista sin nombre</string>
+    <string name="msg_comentario_vacio">No puedes introducir un comentario en blanco</string>
+    
+
+</resources>

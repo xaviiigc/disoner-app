@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gris_dos"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <Button
+        android:id="@+id/btnRepPlay"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/btn_play_anim" />
+
+    <TextView
+        android:id="@+id/lblRepTiempoTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/seekBar"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:text="-- / --"
+        android:textColor="@color/blanco"
+        android:textIsSelectable="false" />
+
+    <TextView
+        android:id="@+id/lblRepTiempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblRepTiempoTotal"
+        android:layout_alignBottom="@+id/lblRepTiempoTotal"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/blanco"
+        android:textIsSelectable="false" />
+
+    <Button
+        android:id="@+id/btnRepComentar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_entrar"
+        android:minHeight="40dp"
+        android:padding="7dp"
+        android:text="@string/btn_reproductor_comentar" />
+
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_above="@+id/btnRepComentar"
+        android:layout_alignRight="@+id/btnRepComentar"
+        android:layout_below="@+id/lblRepComentarios" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/lblRepComentarios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/android:list"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/txt_cancion_comentarios"
+        android:textColor="@color/blanco"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnRepLike"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/btnRepPlay"
+        android:layout_alignBottom="@+id/btnRepPlay"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/btnRepPlay"
+        android:background="@drawable/btn_entrar"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/btnRepLista"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/btnRepLike"
+        android:layout_alignBottom="@+id/btnRepLike"
+        android:layout_alignRight="@+id/lblRepNombre"
+        android:background="@drawable/btn_entrar"
+        android:text="Añadir a lista" />
+
+    <TextView
+        android:id="@+id/lblRepNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnRepPlay"
+        android:layout_below="@+id/btnRepPlay"
+        android:layout_marginTop="21dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="@color/blanco"
+        android:textIsSelectable="true"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblRepTiempo"
+        android:layout_below="@+id/lblRepNombre"
+        android:layout_marginTop="38dp" />
+
+    <EditText
+        android:id="@+id/txtRepComentario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/btnRepComentar"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/btnRepComentar"
+        android:background="@color/blanco"
+        android:ems="10"
+        android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+        android:maxLength="@integer/max_length_comentario"
+        android:maxLines="2"
+        android:padding="7dp" />
+
+</RelativeLayout>

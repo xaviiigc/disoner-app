@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="azul">#0072E4</color>
+    <color name="blanco">#EEE</color>
+    <color name="gris_dos">#222</color>
+    <color name="azul_preset">#05316D</color>
+    <color name="blanco_a">#AAA</color>
+    
+</resources>

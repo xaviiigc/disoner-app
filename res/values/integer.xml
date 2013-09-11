@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="max_length_comentario" format="integer" type="integer">220</item>
+    
+</resources>

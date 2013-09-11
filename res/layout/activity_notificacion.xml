@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:id="@+id/txtNotArtista"
+        style="Custom Notification Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/image" />
+
+    <TextView
+        android:id="@+id/txtNotCancion"
+        style="Custom Notification Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNotArtista"
+        android:layout_toRightOf="@id/image" />
+
+    <Button
+        android:id="@+id/btnNotPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtNotCancion"
+        android:layout_alignTop="@+id/txtNotArtista"
+        android:layout_toLeftOf="@+id/btnNotPause"
+        android:text="Play" />
+
+    <Button
+        android:id="@+id/btnNotPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnNotPlay"
+        android:layout_alignBottom="@+id/btnNotPlay"
+        android:layout_alignParentRight="true"
+        android:text="Pause" />
+
+</RelativeLayout>

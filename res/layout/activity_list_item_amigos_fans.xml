@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="8dp" >
+
+    <ProgressBar
+        android:id="@+id/pBarAmigosFans"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imgAmigosFans"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:contentDescription="@string/msg_fallo_img"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txtAmigosFansNombre"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="0.5"
+        android:text="Dark Pointer"
+        android:textColor="@color/blanco"
+        android:textIsSelectable="false"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnAmigosFansAgregar"
+        android:layout_width="85dp"
+        android:layout_height="45dp"
+        android:background="@drawable/btn_entrar"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="@string/btn_amigo_off" />
+
+</LinearLayout>
